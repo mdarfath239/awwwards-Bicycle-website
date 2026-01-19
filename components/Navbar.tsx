@@ -1,18 +1,12 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
-    const [scrollY, setScrollY] = useState(0);
 
-    useEffect(() => {
-        const handleScroll = () => setScrollY(window.scrollY);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
-    const isScrolled = scrollY > 50;
+
 
     return (
         <motion.nav
@@ -20,9 +14,9 @@ export default function Navbar() {
             animate={{
                 opacity: 1,
                 y: 0,
-                backgroundColor: isScrolled ? 'rgba(5, 5, 5, 0.75)' : 'rgba(5, 5, 5, 0)',
-                backdropFilter: isScrolled ? 'blur(10px)' : 'blur(0px)',
-                borderBottom: isScrolled ? '1px solid rgba(255, 255, 255, 0.1)' : '1px solid rgba(255, 255, 255, 0)'
+                backgroundColor: 'rgba(5, 5, 5, 0)',
+                backdropFilter: 'blur(0px)',
+                borderBottom: '1px solid rgba(255, 255, 255, 0)'
             }}
             transition={{ duration: 0.5 }}
             className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12"
