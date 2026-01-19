@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Awwwards Bicycle Website
 
-## Getting Started
+## Project Overview
+The Awwwards Bicycle Website is a modern, responsive web application built using Next.js and TypeScript. It features a sleek design and interactive components, making it ideal for showcasing bicycles or similar products. The project is optimized for performance and accessibility, adhering to best practices in web development.
 
-First, run the development server:
+## Features
+- **Responsive Design**: Ensures the website looks great on all devices.
+- **Interactive Components**: Includes features like a canvas sequence animation, navbar, and overlay sections.
+- **Optimized Performance**: Utilizes Next.js features like server-side rendering (SSR) and static site generation (SSG).
+- **Modular Codebase**: Organized structure with reusable components and utilities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
+Follow these steps to set up the project locally:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd awwwards-Bicycle-website
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Install Dependencies**:
+   Ensure you have Node.js installed, then run:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+4. **Run the Development Server**:
+   Start the development server with:
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
+- **app/**: Contains the main application files, including global styles and layout.
+- **components/**: Houses reusable React components like `Navbar`, `CanvasSequence`, and `OverlaySections`.
+- **public/**: Stores static assets such as images and sequences.
+- **utils/**: Includes utility functions like `lenis` for smooth scrolling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How It Works
+1. **Canvas Sequence**: The `CanvasSequence` component renders an animation sequence using images stored in the `public/sequence/` directory.
+2. **Navbar**: The `Navbar` component provides navigation across the website.
+3. **Overlay Sections**: The `OverlaySections` component creates visually appealing overlays for content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
+- **Next.js**: Framework for React applications.
+- **TypeScript**: Adds static typing to JavaScript.
+- **PostCSS**: For processing CSS with plugins.
+- **ESLint**: Ensures code quality and consistency.
 
-## Deploy on Vercel
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+For any questions or issues, please contact the project maintainer.
