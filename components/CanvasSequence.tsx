@@ -113,7 +113,7 @@ export default function CanvasSequence() {
     return (
         <canvas
             ref={canvasRef}
-            className="fixed inset-0 w-full h-full object-cover z-0 bg-[#050505]"
+            className="fixed inset-0 w-full h-full object-cover z-0 bg-[#050505] brightness-125"
         />
     );
 }

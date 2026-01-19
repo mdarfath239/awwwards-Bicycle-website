@@ -36,13 +36,13 @@ export default function OverlaySections() {
             {/* 0-15% HERO INTRO */}
             <Section className="items-center text-center pt-[20vh]" id="overview">
                 <FadeIn>
-                    <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-4 text-white/90">
-                        CARBON PERFORMANCE
+                    <h1 className="text-4xl md:text-8xl font-bold tracking-tighter mb-4 text-white/90">
+                        BICYCLE PERFORMANCE
                     </h1>
                     <p className="text-xl md:text-2xl font-light text-white/60 tracking-wide max-w-2xl mx-auto">
                         Engineered for speed. Designed for control.
                     </p>
-                    <p className="mt-4 text-sm text-[#00D6FF] uppercase tracking-widest font-semibold">
+                    <p className="mt-4 text-xs text-[#00D6FF] uppercase tracking-widest font-semibold">
                         Flagship Model X
                     </p>
                 </FadeIn>
